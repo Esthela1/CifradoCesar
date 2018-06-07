@@ -9,7 +9,7 @@ resultado.innerHTML += " ";
 function encriptar(){
 	message = texto.value;
 	resultado.innerHTML = " ";
-	let delta = parseInt(movimiento.value) % 26;
+	const delta = parseInt(movimiento.value) % 26;
 	console.log(delta);
 	for(i=0;i<message.length; i++){
 		if (message.charCodeAt(i)>90) {
@@ -27,7 +27,7 @@ function encriptar(){
 function desencriptar(){
 	message = texto.value;
 	resultado.innerHTML = " ";
-	let delta = parseInt(movimiento.value) % 26;
+	const delta = parseInt(movimiento.value) % 26;
 	console.log(delta);
 	for(i=0;i<message.length; i++){
 		if (message.charCodeAt(i)>90) {
