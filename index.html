@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Cifrado Cesar</title>
+	<title>Fiesta sorpresa</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1>Cifrado Cesar</h1>
-	<span>Indica una clave numérica para cifrar tu mensaje: </span><br>
-	<input type="number" name="desplazamiento" id="desplazamiento"><br>
-	<span>Mensaje: </span><br>
-	<input type="text" name="mensaje" id="firstMessage"><br>
-	<button type="button" name="button" onclick="encriptar()">Encriptar</button>
-	<button type="button" name="button" onclick="desencriptar()">Desencriptar</button><br>
-	<span>Mensaje Codificado / Decodificado: </span>
-	<span id="resultado"> </span>
-	<script type="text/javascript" src="app.js">
+	<h1>Fiesta sorpresa</h1>
 
+​<form action="/action_page.php">
+	<p>Instrucciónes:<br>
+	Escribe tu mensaje sin espacios o numeros.<br>
+	En ambos casos debes refrescar la pagina despues de cada acción<br>
+	Cifrar: Escribe tu mensaje y da clic en cifrar.<br>
+	Decifrar: Escribe o pega tu cifrado y da clic en Decifrar.<br>
+	 </p>
+  <!--<input type="checkbox" name="cod1" value="Codificar"> Codificar<br>
+  <input type="checkbox" name="cod2" value="Decodificar"> Decodificar<br>-->
+	<textarea id="mensaje" placeholder="Escribe tu mensaje aquí.."></textarea><br>
+	<textarea id= resultado placeholder="Resultado.."></textarea><br>
+  <!--<input type="submit" id="sub1" value="APLICAR"><br>
+   <input type="submit" id="sub2" value="Nuevo mensaje">-->
+
+   <p><input type="button" value="Cifrar" onclick="cipher()">
+<input type="button" value="Decifrar" onclick="decipher()"></p>
+
+</form>
+	<script type="text/javascript" src="cipher.js">
 	</script>
 </body>
 </html>
